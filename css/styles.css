@@ -1,0 +1,278 @@
+/* HTML5 CSS reset */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin         : 0;
+    padding        : 0;
+    border         : 0;
+    outline        : 0;
+    font-size      : 100%;
+    vertical-align : baseline;
+    background     : transparent;
+    font-family    : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight    : 300;
+}
+
+body {
+    line-height : 1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display : block;
+}
+
+nav ul {
+    list-style : none;
+}
+
+blockquote, q {
+    quotes : none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content : '';
+    content : none;
+}
+
+a {
+    margin         : 0;
+    padding        : 0;
+    font-size      : 100%;
+    vertical-align : baseline;
+    background     : transparent;
+}
+
+/* Webpage specified css */
+a {
+  color : #224885;
+}
+h1, h2, h3, h4, h5 {
+  margin-bottom : 10px;
+  font-weight   : 700;
+  text-shadow   : 1px 1px 2px #FFFFFF;
+}
+
+h1 {
+  font-size : 30px;
+}
+
+h2 {
+  font-size : 24px;
+}
+
+h3 {
+  font-size : 16px;
+}
+
+p {
+  margin-bottom : 15px;
+  font-size     : 14px;
+  line-height   : normal;
+}
+
+li {
+  list-style : none;
+}
+
+li a {
+  padding : 5px 0;
+  display : block;
+}
+
+.pull-right {
+  float : right;
+}
+
+.pull-left {
+  float : left;
+}
+
+.hidden {
+  display : none;
+}
+
+.responsive-grid {
+  display        : inline-block;
+  vertical-align : middle;
+}
+
+.md-thumb {
+  width   : 250px;
+  padding : 0 20px 20px 0;
+}
+
+header {
+  padding : 20px;
+}
+
+header a {
+  text-decoration : none;
+  color           : #000000;
+}
+
+header a:hover {
+  color : #A9A9A9;
+}
+
+header .brand {
+  width       : 200px;
+  font-size   : 24px;
+  font-weight : 700;
+  text-shadow : 1px 1px 2px #FFFFFF;
+}
+
+header nav {
+    width   : -moz-calc(100% - 205px);
+    width   : -webkit-calc(100% - 205px);
+    width   : -o-calc(100% - 205px);
+    width   : calc(100% - 205px);
+}
+
+ul.navbar {
+  text-align : right;
+}
+ul.navbar li {
+  display : inline-block;
+  padding : 0 5px;
+}
+
+.navbar-mobile {
+  display : none;
+}
+
+.navbar-mobile ul {
+  float      : right;
+  position   : absolute;
+  min-width  : 200px;
+  right      : 21px;
+  border     : 1px solid #A9A9A9;
+  background : #FFFFFF;
+  margin-top : -1px;
+  z-index    : 2;
+}
+
+.navbar-mobile ul li:hover {
+  background : #224885;
+}
+
+.navbar-mobile ul li a {
+  padding : 10px;
+  display : block;
+}
+
+.navbar-mobile ul li:hover a {
+  color : #FFFFFF;
+}
+
+.mobile-nav {
+  cursor  : pointer;
+  padding : 10px;
+  border  : 1px solid #A9A9A9;
+}
+
+.mobile-nav:hover {
+  background-color : #224885;
+  color            : #FFFFFF;
+}
+
+.banner {
+  max-height : 400px;
+  overflow   : hidden;
+  position   : relative;
+}
+
+.banner img {
+  width : 100%;
+}
+
+main {
+  max-width : 1000px;
+  margin    : 20px auto;
+  overflow  : hidden;
+  padding   : 0 10px;
+  display   : block;
+}
+
+article {
+  width : 75%;
+}
+
+aside {
+  width      : 24%;
+  background : #EFEFEF;
+}
+
+aside > .container {
+  padding : 20px 20px 10px 20px;
+}
+
+aside ul {
+  padding-bottom : 10px;
+}
+
+.grid-4 {
+  width   : calc(33% - 10px);
+  width   : -webkit-calc(33% - 10px);
+  width   : -moz-calc(33% - 10px);
+  float   : left;
+  padding : 5px;
+}
+
+.grid-4 img {
+  width : 100%;
+}
+
+footer {
+  background : #000000;
+  color      : #FFFFFF;
+  text-align : center;
+  padding    : 25px 0;
+}
+
+small {
+  font-size : 12px;
+}
+
+@media handheld, screen and (max-width : 993px) {
+
+}
+
+@media handheld, screen and (max-width : 769px) {
+  ul.navbar {
+    display : none;
+  }
+  .navbar-mobile {
+    display : inline-block;
+  }
+  aside, article {
+    width : 100%;
+  }
+  aside li {
+    display : inline-block;
+  }
+}
+
+@media handheld, screen and (max-width : 481px) {
+  .grid-4 {
+    width   : 100%;
+    padding : 10px 0;
+  }
+  .md-thumb {
+    width : 100%;
+  }
+}
+
+@media handheld, screen and (max-width : 321px) {
+
+}
